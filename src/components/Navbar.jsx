@@ -9,7 +9,7 @@ const Navbar = () => {
     if(isPending){
         return <div>Loading...</div>
     }
-    console.log('Loging session',data);
+    // console.log('Loging session',data);
 
     const user = data?.user;
     return (
@@ -21,8 +21,9 @@ const Navbar = () => {
                         <p className="font-bold">ACME</p>
                     </div>
                     <ul className="flex items-center gap-4">
-                        <li><Link href="#">Features</Link></li>
-                        <li><Link href="#">Pricing</Link></li>
+                        <li><Link href="/">Home</Link></li>
+                        <li><Link href="/dashboard">Dashboard</Link></li>
+                        <li><Link href="/about">About</Link></li>
                     </ul>
                     <div>
                         {
